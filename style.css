@@ -1,0 +1,299 @@
+body {
+    margin:0;
+    padding:0 0 0 2rem;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: #333; */
+}
+.navlist {
+    padding-top: 1rem;
+}
+li{
+    list-style: none;
+}
+a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: grey;
+}
+.gap-7{
+    gap: 9rem;
+}
+.gap-3{
+    gap: 9rem;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    color: #b300b3;
+    font-size: 1.5rem;
+}
+/* Header */
+.navbar {
+    position:fixed;
+    background-color: white;
+    top:0;
+    width:90%;
+    margin: 0rem 0 0 2rem;
+    padding-inline: 3rem;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.12);
+    border-radius: 3rem;
+    z-index: 1000;
+}
+
+.gap-4{
+    gap:16rem;
+}
+.button{
+    background-color: rgb(195, 46, 195);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+}
+/* ---------- Dropdown Styling ---------- */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 1.4rem;
+  color: grey;
+  text-decoration: none;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Dropdown items */
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: grey;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(195, 46, 195);
+  color: white;
+}
+
+/* Show dropdown smoothly */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 50;
+}
+
+/* Optional: arrow indicator rotation */
+.dropdown:hover .dropbtn::after {
+  transform: rotate(180deg);
+}
+
+/* Optional smooth transition */
+.navbar, .dropdown-content {
+  transition: all 0.3s ease;
+}
+
+/* main section */
+.hero {
+    margin-top: 6rem;
+    margin-right: 1rem;
+}
+/* carousel-item */
+.carousel-item{
+    padding:0 0 0rem 0; 
+}
+footer {
+    padding: 2rem 0;
+    box-shadow: 0 -4px 12px rgb(0, 0, 0, 0.12);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: grey;
+}
+
+
+/* Login and sighin page */
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f8f8f8;
+}
+
+/* Shared container for login & signup */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Logo */
+.logologin {
+    font-size: 2rem;
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+/* Card design */
+.login, .signin {
+    width: 100%;
+    max-width: 420px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.lh1, .lh2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Inputs and text areas */
+.input, .inputs, .address {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+.date{
+    width: 72%;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+#gender{
+    width: 9%;
+    font-size: 1rem;
+}
+
+.address {
+    resize: none;
+}
+
+/* Buttons */
+.btn3 {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(195, 46, 195);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn3:hover {
+    background-color: rgb(170, 40, 170);
+}
+
+/* Text and links */
+.text-color {
+    color: grey;
+    text-decoration: none;
+}
+
+.text-color:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 0.9rem;
+    color: grey;
+    margin-top: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login, .signin {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .logologin {
+        font-size: 1.7rem;
+    }
+
+    .btn3 {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login, .signin {
+        padding: 1.2rem;
+        box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    .logologin {
+        font-size: 1.5rem;
+    }
+
+    .lh1, .lh2 {
+        font-size: 1.4rem;
+    }
+
+    .input, .inputs, .date, .address {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .btn3 {
+        font-size: 0.95rem;
+    }
+}
+
+/* Future Tours and Past tours*/
+    h1 {
+      text-align: center;
+      color: rgb(195, 46, 195);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 2px solid rgb(195, 46, 195);
+      text-align: center;
+      padding: 10px;
+    }
+    th {
+      background-color: #f6c3ff;
+    }
+    
